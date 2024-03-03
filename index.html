@@ -33,15 +33,33 @@
       li{
         padding: 5px;
       }
+      table, tr, th, td {
+    border: 2px solid rgb(216, 186, 131);
+    border-collapse: collapse;
+}
 
-      td,th{
-        padding-top:10px;
-        padding-left:5px;
-      }
+td, th {
+    padding: 10px;
+}
+
       header{
             margin-right: 5px; 
             color: red;
             background-color:yellow;
+        }
+       
+        .roles{
+         list-style-type: lower-alpha;
+        }
+        #projectDesc::selection{
+        background-color: rgb(241, 193, 104);
+         }
+         #listSummary li{
+         list-style-type: none;
+          }
+
+        #listSummary li::marker{
+        content: "✍️ ";
         }
     </style>
   </head>
@@ -70,7 +88,7 @@
 <!-- HOME Section -->
     <section id="Home">
     <h2>Professional Summary</h2>
-    <ul>
+    <ul id="listSummary">
       <li>Having 1 years of experience in developing Single page Web Applications using<span style="color:orange"> Angular </span>8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li> 
       <li class="colorli">Experience on working with version control system - GIT and GitHub</li> 
       <li class="classlist">Experience working with JIRA for user stories and bug tracking</li> 
@@ -94,16 +112,25 @@
     <p><b>Team Size:</b>06</p>
     <p><b>Duration:</b>2023 </p>
    
-    <p><b>Project Description:</b>This Project is mainly used for student Management in college ,where it help to 
+    <p id="projectDesc"><b>Project Description:</b>This Project is mainly used for student Management in college ,where it help to 
       manage student record like <br>student resignation,student update information and to see all his or academic activities
        like score cars,attendance.</p>
-   
-  </section>
+       <hr>
+       <h2>Roles And Responsibility</h2>
+      <ol class="roles">
+       <li>Designed and Implemented the user interface using HTML5 and CSS3</li>
+       <li>Work closely with backend developers for code integration</li>
+       <li>Identifying and troubleshooting issues in front end codebase</li>
+       <li>Worked in GIT as a version control</li>
+       <li>Used JIRA for bug tracking</li>
+       <li>Implemented project using Agile SCRUM methodology, involved in daily sta
+       <li>involved in fixing technical issues in production environment</li>
+   </section>
   <hr>
 <!-- section Techstack -->
   <section id="Techstack">
     <h2>Technology Stack</h2>
-    <table border="1">
+    <table>
         <thead>
       <tr>
       <th>SR.no</th>
@@ -140,7 +167,7 @@
 <!-- section educationalDetails -->
   <section id="educationalDetails">
     <h2>Education</h2>
-    <table border="1">
+    <table>
       <thead>
       <tr>
       <th>Qaulification</th>
